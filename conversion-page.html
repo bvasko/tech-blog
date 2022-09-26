@@ -32,8 +32,8 @@
         qstr = qstr.substring(1, qstr.length);
         let urlParams = qstr.split("&");
         console.log(urlParams);
-        let trackingImageSrc = `http://click.exacttarget.com/conversion.aspx?xml=<system><system_name>tracking</system_name><action>conversion</action><data_set><data amt='50' unit='Dollars' accumulate='true'/><data amt='1.0' unit='Number of Tickets' accumulate='true'/></data_set></system>`;
-        document.write("<img src='" + trackingImageSrc + "' width=1 height=1 />");
+        let trackingImageSrc = `http://click.exacttarget.com/conversion.aspx?xml=<system><system_name>tracking</system_name><action>conversion</action><data_set><data amt='50' unit='Dollars' accumulate='true'/><data amt='1.0' unit='Number of Tickets' accumulate='true'/></data_set></system>' width=1 height=1`;
+        document.write("<img src='" + trackingImageSrc + " />");
         //Debug
         //document.write("<textarea rows=5 cols=80>");
 
