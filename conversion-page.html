@@ -23,7 +23,7 @@
             1. Get values from query string parameters (cookies do not work cross-domain)
                 (https://bvasko.github.io/tech-blog/conversion-page.html?sfmc_sub=31746388j=55629l=181_HTMLu=1238583mid=526003083jb=1)
             2. Build an XML string with the data you want to return to the system.
-            3. Use an image tag to capture the conversion and return the XML string to the system. 
+            3. Use an image tag to capture the conversion and return the XML string to the system.  
                 This image tag can be added to any page on your website, to track hits 
                 from the landing page to other pages.  
         */
@@ -32,8 +32,8 @@
         qstr = qstr.substring(1, qstr.length);
         let urlParams = qstr.split("&");
         console.log(urlParams);
-        let trackingImageSrc = `http://click.exacttarget.com/conversion.aspx?xml=<system><system_name>tracking</system_name><action>conversion</action><data_set><data amt='50' unit='Dollars' accumulate='true'/><data amt='1.0' unit='Number of Tickets' accumulate='true'/></data_set></system>' width=1 height=1`;
-        document.write("<img src='" + trackingImageSrc + " />");
+        let trackingImageSrc = `http://click.exacttarget.com/conversion.aspx?xml=<system><system_name>tracking</system_name><action>conversion</action><data_set><data amt='50' unit='Dollars' accumulate='true'/><data amt='1.0' unit='Number of Tickets' accumulate='true'/></data_set></system>" width=1 height=1 />`;
+        document.write("<img src=\"");
         //Debug
         //document.write("<textarea rows=5 cols=80>");
 
